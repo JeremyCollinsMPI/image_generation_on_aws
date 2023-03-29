@@ -42,6 +42,10 @@ wget https://huggingface.co/stabilityai/sd-vae-ft-ema-original/resolve/main/vae-
 
 Place it in /home/$(whoami)/stable-diffusion-webui/models/vae, and select it in Settings > Stable diffusion in the UI.
 
+Choose directory for the images and other settings in the Dreambooth tab before training.
+
+## Additional resources
+
 Script for converting safetensors file to diffusers format if needed:
 
 https://github.com/haofanwang/Lora-for-Diffusers
@@ -61,3 +65,4 @@ pip install omegaconf
 pip install safetensors
 
 python ./scripts/convert_original_stable_diffusion_to_diffusers.py --checkpoint_path /home/$(whoami)/stable-diffusion-webui/models/Stable-diffusion/18472.safetensors --dump_path save_dir --from_safetensors
+
