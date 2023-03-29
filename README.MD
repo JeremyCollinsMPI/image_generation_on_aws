@@ -24,7 +24,7 @@ cd /home/$(whoami)/stable-diffusion-webui/
 
 Modify webui-user.sh:
 
-uncomment the lin ith export commandline_args
+Uncomment the line with export commandline_args
 
 export COMMANDLINE_ARGS="--share --listen"
 
